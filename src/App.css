@@ -27,3 +27,52 @@ button {
   border-radius: 4px;
   background-color: rgb(248 185 42);
 }
+
+.contactForm .contactField {
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.contactForm label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.contactForm input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contactForm input[aria-invalid="true"] {
+  border-color: #c00;
+}
+
+.contactFieldError {
+  display: block;
+  color: #c00;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+.contactActions {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.contactDisplay p {
+  font-style: normal;
+  margin: 6px 0;
+}
+
+.contactError,
+.contactLoading {
+  color: #c00;
+  font-style: normal;
+  margin: 8px 0;
+}

@@ -1,9 +1,11 @@
 import "./App.css";
+import ContactSection from "./components/ContactSection";
 
 function App() {
   return (
     <div className="App">
       <h1>Resume Builder</h1>
+      <ContactSection />
       <div className="resumeSection">
         <h2>Experience</h2>
         <p>Experience Placeholder</p>
