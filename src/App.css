@@ -27,3 +27,49 @@ button {
   border-radius: 4px;
   background-color: rgb(248 185 42);
 }
+
+.addEducationForm .addEducationField {
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.addEducationForm label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.addEducationForm input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.addEducationForm input[aria-invalid="true"] {
+  border-color: #c00;
+}
+
+.addEducationFieldError {
+  display: block;
+  color: #c00;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+.addEducationActions {
+  margin-top: 16px;
+}
+
+.addEducationError {
+  color: #c00;
+  font-style: normal;
+  margin: 8px 0;
+}
+
+.addEducationSuccess {
+  color: #0a0;
+  font-style: normal;
+  margin: 8px 0;
+}

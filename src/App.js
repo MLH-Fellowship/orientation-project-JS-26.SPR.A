@@ -1,4 +1,5 @@
 import "./App.css";
+import AddEducationPage from "./components/AddEducationPage";
 
 function App() {
   return (
@@ -10,12 +11,7 @@ function App() {
         <button>Add Experience</button>
         <br></br>
       </div>
-      <div className="resumeSection">
-        <h2>Education</h2>
-        <p>Education Placeholder</p>
-        <button>Add Education</button>
-        <br></br>
-      </div>
+      <AddEducationPage />
       <div className="resumeSection">
         <h2>Skills</h2>
         <p>Skill Placeholder</p>
@@ -24,6 +20,14 @@ function App() {
       </div>
       <br></br>
       <button>Export</button>
+      <a
+        className="App-link"
+        href="https://reactjs.org"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Learn React
+      </a>
     </div>
   );
 }
