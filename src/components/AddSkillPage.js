@@ -40,10 +40,16 @@ function AddSkillPage() {
     };
     addSkill(payload)
       .then((data) => {
-        setLastAddedId(data?.id != null ? data.id : null);
+        const id = data?.id != null ? data.id : null;
+        setLastAddedId(id);
         setForm(initialForm);
+        alert(id != null ? `Skill added at position ${id}` : "Skill added.");
       })
-      .catch((err) => setApiError(err.message || "Request failed"))
+      .catch((err) => {
+        const msg = err.message || "Request failed";
+        setApiError(msg);
+        alert(msg);
+      })
       .finally(() => setLoading(false));
   };
 
