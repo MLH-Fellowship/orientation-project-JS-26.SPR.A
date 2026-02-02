@@ -1,5 +1,6 @@
 import "./App.css";
 import AddEducationPage from "./components/AddEducationPage";
+import AddSkillPage from "./components/AddSkillPage";
 
 function App() {
   return (
@@ -18,6 +19,13 @@ function App() {
         <button>Add Skill</button>
         <br></br>
       </div>
+      <div className="resumeSection">
+        <h2>Education</h2>
+        <p>Education Placeholder</p>
+        <button>Add Education</button>
+        <br></br>
+      </div>
+      <AddSkillPage />
       <br></br>
       <button>Export</button>
       <a

@@ -29,17 +29,20 @@ button {
 }
 
 .addEducationForm .addEducationField {
+.addSkillForm .addSkillField {
   text-align: left;
   margin-bottom: 12px;
 }
 
 .addEducationForm label {
+.addSkillForm label {
   display: block;
   margin-bottom: 4px;
   font-weight: 600;
 }
 
 .addEducationForm input {
+.addSkillForm input {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
@@ -52,6 +55,11 @@ button {
 }
 
 .addEducationFieldError {
+.addSkillForm input[aria-invalid="true"] {
+  border-color: #c00;
+}
+
+.addSkillFieldError {
   display: block;
   color: #c00;
   font-size: 0.9em;
@@ -63,12 +71,18 @@ button {
 }
 
 .addEducationError {
+.addSkillActions {
+  margin-top: 16px;
+}
+
+.addSkillError {
   color: #c00;
   font-style: normal;
   margin: 8px 0;
 }
 
 .addEducationSuccess {
+.addSkillSuccess {
   color: #0a0;
   font-style: normal;
   margin: 8px 0;
