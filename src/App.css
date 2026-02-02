@@ -28,18 +28,24 @@ button {
   background-color: rgb(248 185 42);
 }
 
-.contactForm .contactField {
+/* Shared field styling for both forms */
+.contactForm .contactField,
+.addSkillForm .addSkillField {
   text-align: left;
   margin-bottom: 12px;
 }
 
-.contactForm label {
+/* Shared label styling */
+.contactForm label,
+.addSkillForm label {
   display: block;
   margin-bottom: 4px;
   font-weight: 600;
 }
 
-.contactForm input {
+/* Shared input styling */
+.contactForm input,
+.addSkillForm input {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
@@ -47,17 +53,22 @@ button {
   box-sizing: border-box;
 }
 
-.contactForm input[aria-invalid="true"] {
+/* Shared invalid state */
+.contactForm input[aria-invalid="true"],
+.addSkillForm input[aria-invalid="true"] {
   border-color: #c00;
 }
 
-.contactFieldError {
+/* Error text under fields */
+.contactFieldError,
+.addSkillFieldError {
   display: block;
   color: #c00;
   font-size: 0.9em;
   margin-top: 4px;
 }
 
+/* Actions */
 .contactActions {
   margin-top: 16px;
   display: flex;
@@ -65,14 +76,30 @@ button {
   flex-wrap: wrap;
 }
 
+.addSkillActions {
+  margin-top: 16px;
+}
+
+/* Display and status messages */
 .contactDisplay p {
   font-style: normal;
   margin: 6px 0;
 }
 
 .contactError,
-.contactLoading {
-  color: #c00;
+.contactLoading,
+.addSkillError,
+.addSkillSuccess {
   font-style: normal;
   margin: 8px 0;
+}
+
+.contactError,
+.contactLoading,
+.addSkillError {
+  color: #c00;
+}
+
+.addSkillSuccess {
+  color: #0a0;
 }
