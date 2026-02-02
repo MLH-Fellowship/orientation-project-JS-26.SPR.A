@@ -28,20 +28,20 @@ button {
   background-color: rgb(248 185 42);
 }
 
-.addEducationForm .addEducationField {
+.addEducationForm .addEducationField,
 .addSkillForm .addSkillField {
   text-align: left;
   margin-bottom: 12px;
 }
 
-.addEducationForm label {
+.addEducationForm label,
 .addSkillForm label {
   display: block;
   margin-bottom: 4px;
   font-weight: 600;
 }
 
-.addEducationForm input {
+.addEducationForm input,
 .addSkillForm input {
   width: 100%;
   padding: 8px;
@@ -50,15 +50,12 @@ button {
   box-sizing: border-box;
 }
 
-.addEducationForm input[aria-invalid="true"] {
-  border-color: #c00;
-}
-
-.addEducationFieldError {
+.addEducationForm input[aria-invalid="true"],
 .addSkillForm input[aria-invalid="true"] {
   border-color: #c00;
 }
 
+.addEducationFieldError,
 .addSkillFieldError {
   display: block;
   color: #c00;
@@ -66,22 +63,19 @@ button {
   margin-top: 4px;
 }
 
-.addEducationActions {
-  margin-top: 16px;
-}
-
-.addEducationError {
+.addEducationActions,
 .addSkillActions {
   margin-top: 16px;
 }
 
+.addEducationError,
 .addSkillError {
   color: #c00;
   font-style: normal;
   margin: 8px 0;
 }
 
-.addEducationSuccess {
+.addEducationSuccess,
 .addSkillSuccess {
   color: #0a0;
   font-style: normal;
