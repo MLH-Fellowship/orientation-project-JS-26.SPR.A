@@ -1,4 +1,5 @@
 import "./App.css";
+import AddSkillPage from "./components/AddSkillPage";
 
 function App() {
   return (
@@ -16,14 +17,17 @@ function App() {
         <button>Add Education</button>
         <br></br>
       </div>
-      <div className="resumeSection">
-        <h2>Skills</h2>
-        <p>Skill Placeholder</p>
-        <button>Add Skill</button>
-        <br></br>
-      </div>
+      <AddSkillPage />
       <br></br>
       <button>Export</button>
+      <a
+        className="App-link"
+        href="https://reactjs.org"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Learn React
+      </a>
     </div>
   );
 }
