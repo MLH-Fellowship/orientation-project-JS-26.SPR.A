@@ -5,7 +5,7 @@
 const BASE_URL = process.env.REACT_APP_API_URL || "";
 
 export async function getContact() {
-  const res = await fetch(`${BASE_URL}/resume/contact`, {
+  const res = await fetch(`${BASE_URL}/resume/user`, {
     method: "GET",
     headers: { Accept: "application/json" },
   });
@@ -14,7 +14,7 @@ export async function getContact() {
 }
 
 export async function addContact(contact) {
-  const res = await fetch(`${BASE_URL}/resume/contact`, {
+  const res = await fetch(`${BASE_URL}/resume/user`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -27,7 +27,7 @@ export async function addContact(contact) {
 }
 
 export async function updateContact(contact) {
-  const res = await fetch(`${BASE_URL}/resume/contact`, {
+  const res = await fetch(`${BASE_URL}/resume/user`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
