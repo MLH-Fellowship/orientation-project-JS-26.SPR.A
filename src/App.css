@@ -30,6 +30,7 @@ button {
 
 /* Shared field styling for both forms */
 .contactForm .contactField,
+.addEducationForm .addEducationField,
 .addSkillForm .addSkillField {
   text-align: left;
   margin-bottom: 12px;
@@ -37,6 +38,7 @@ button {
 
 /* Shared label styling */
 .contactForm label,
+.addEducationForm label,
 .addSkillForm label {
   display: block;
   margin-bottom: 4px;
@@ -45,6 +47,7 @@ button {
 
 /* Shared input styling */
 .contactForm input,
+.addEducationForm input,
 .addSkillForm input {
   width: 100%;
   padding: 8px;
@@ -55,12 +58,14 @@ button {
 
 /* Shared invalid state */
 .contactForm input[aria-invalid="true"],
+.addEducationForm input[aria-invalid="true"],
 .addSkillForm input[aria-invalid="true"] {
   border-color: #c00;
 }
 
 /* Error text under fields */
 .contactFieldError,
+.addEducationFieldError,
 .addSkillFieldError {
   display: block;
   color: #c00;
@@ -76,12 +81,16 @@ button {
   flex-wrap: wrap;
 }
 
+.addEducationActions,
 .addSkillActions {
   margin-top: 16px;
 }
 
 /* Display and status messages */
 .contactDisplay p {
+.addEducationError,
+.addSkillError {
+  color: #c00;
   font-style: normal;
   margin: 6px 0;
 }
@@ -89,6 +98,7 @@ button {
 .contactError,
 .contactLoading,
 .addSkillError,
+.addEducationSuccess,
 .addSkillSuccess {
   font-style: normal;
   margin: 8px 0;
