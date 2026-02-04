@@ -26,9 +26,11 @@ button {
   padding: 10px;
   border-radius: 4px;
   background-color: rgb(248 185 42);
+  border: none;
+  cursor: pointer;
 }
 
-/* Shared field styling for both forms */
+/* Shared field styling for all forms */
 .contactForm .contactField,
 .addEducationForm .addEducationField,
 .addSkillForm .addSkillField {
@@ -73,21 +75,18 @@ button {
   margin-top: 4px;
 }
 
-/* Actions */
-.contactActions {
+/* Form actions */
+.contactActions,
+.addEducationActions,
+.addSkillActions {
   margin-top: 16px;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
 
-.addEducationActions,
-.addSkillActions {
-  margin-top: 16px;
-}
-
 /* Display and status messages */
-.contactDisplay p {
+.contactDisplay p,
 .addEducationError,
 .addSkillError {
   color: #c00;
@@ -97,7 +96,6 @@ button {
 
 .contactError,
 .contactLoading,
-.addSkillError,
 .addEducationSuccess,
 .addSkillSuccess {
   font-style: normal;
@@ -106,10 +104,12 @@ button {
 
 .contactError,
 .contactLoading,
+.addEducationError,
 .addSkillError {
   color: #c00;
 }
 
+.addEducationSuccess,
 .addSkillSuccess {
   color: #0a0;
 }
