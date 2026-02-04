@@ -1,4 +1,5 @@
 import "./App.css";
+import AddEducationPage from "./components/AddEducationPage";
 import AddSkillPage from "./components/AddSkillPage";
 
 function App() {
@@ -9,6 +10,13 @@ function App() {
         <h2>Experience</h2>
         <p>Experience Placeholder</p>
         <button>Add Experience</button>
+        <br></br>
+      </div>
+      <AddEducationPage />
+      <div className="resumeSection">
+        <h2>Skills</h2>
+        <p>Skill Placeholder</p>
+        <button>Add Skill</button>
         <br></br>
       </div>
       <div className="resumeSection">
