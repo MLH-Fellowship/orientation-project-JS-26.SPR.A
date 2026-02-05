@@ -1,11 +1,13 @@
 import "./App.css";
 import AddEducationPage from "./components/AddEducationPage";
+import ContactSection from "./components/ContactSection";
 import AddSkillPage from "./components/AddSkillPage";
 
 function App() {
   return (
     <div className="App">
       <h1>Resume Builder</h1>
+      <ContactSection />
       <div className="resumeSection">
         <h2>Experience</h2>
         <p>Experience Placeholder</p>
@@ -13,18 +15,6 @@ function App() {
         <br></br>
       </div>
       <AddEducationPage />
-      <div className="resumeSection">
-        <h2>Skills</h2>
-        <p>Skill Placeholder</p>
-        <button>Add Skill</button>
-        <br></br>
-      </div>
-      <div className="resumeSection">
-        <h2>Education</h2>
-        <p>Education Placeholder</p>
-        <button>Add Education</button>
-        <br></br>
-      </div>
       <AddSkillPage />
       <br></br>
       <button>Export</button>

@@ -81,3 +81,49 @@ button {
   font-style: normal;
   margin: 8px 0;
 }
+
+.contactForm .contactField {
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.contactForm label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.contactForm input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contactForm input[aria-invalid="true"] {
+  border-color: #c00;
+}
+
+.contactFieldError {
+  display: block;
+  color: #c00;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+.contactActions {
+  margin-top: 16px;
+}
+
+.contactError {
+  color: #c00;
+  font-style: normal;
+  margin: 8px 0;
+}
+
+.contactSuccess {
+  color: #0a0;
+  font-style: normal;
+  margin: 8px 0;
+}
