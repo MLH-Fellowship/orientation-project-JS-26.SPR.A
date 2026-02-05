@@ -13,7 +13,9 @@ export const validateContact = (contact) => {
 
   if (!contact.phone || contact.phone.trim() === "") {
     errors.phone = "Phone is required";
-  } else if (!/^\d{10}$|^\d{3}-\d{3}-\d{4}$/.test(contact.phone.replace(/\D/g, ""))) {
+  } else if (
+    !/^\d{10}$|^\d{3}-\d{3}-\d{4}$/.test(contact.phone.replace(/\D/g, ""))
+  ) {
     errors.phone = "Phone must be a valid 10-digit number";
   }
 
